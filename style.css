@@ -1,0 +1,88 @@
+﻿/* Remove CSS properties to see the difference */
+body {
+  background-color: lightblue;
+}
+/* CSS grid for responsive semantic layout (auto-fits any screen) try resizing to see for yourself */
+main {
+  border: 15px solid black;
+  background-color: #1d1d1d; 
+  width: 30vw;
+  margin: 0 auto; /* To center HTML element */
+  padding: 1%; /* To provide space for its child elements */
+  display: grid;
+  grid-gap: 2vw; 
+  grid-template-areas:
+  "h h h h"
+  "m m m m"
+  ". . . ."
+  ". . . e"
+  ". . . e"
+  ". . . e"
+  ". . . e"
+  ;   
+  font-size: 4vw;  /* Responsive font size for nested children to inherit by default */
+  font-weight: bolder;
+}
+header {
+  grid-area: h;
+  text-align: center;
+  text-shadow: 2px 3px 5px black,
+  -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* text borders */
+  border: 5px solid black;
+  background-color: yellow;
+  color: #ff2d55;
+}
+section { 
+  grid-area: m;
+  padding: 3%;
+  border: 5px solid black;
+  background-color: #d4e2e3;
+  color: blue;
+  text-align: center;
+}
+/* =============================================== */
+.button {
+  outline: 3px solid black;
+  border: 2px solid #1d1d1d;
+  padding: 5%;
+  background-color: #2ecc71;
+  color: white;
+  text-shadow: 2px 2px 0 #000, 
+  -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;  
+  cursor: pointer;
+  transition: 0.2s;  /* for smoothness */
+  font-size: 2vw;
+}
+.button:hover {
+  background-color: #80ff00;
+  transform: scale(1.2);
+}
+.operator {
+  background-color: #4f84c4;
+  color: red;
+}
+.operator:hover {
+  background-color: #5ac8fa;
+  color: red;
+}
+.equal {
+  grid-area: e;
+  background-color: #008a00;
+  color: red;
+}
+.equal:hover {
+  transform: scale(1); 
+}
+.clear {
+  background-color: #7f8c8d;
+  color: yellow;
+}
+.clear:hover {
+  outline: 1px solid orange;
+  background-color: #dc3545;
+}
+.monitor {
+  color: #aa00ff;
+  text-shadow: 2px 2px 0 #000, 
+  -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
