@@ -1,4 +1,4 @@
-﻿/* DRY HTML code thanks to JS */
+/* DRY HTML code thanks to JS */
 /* Vanilla JS (Framework) "Best Practices" > Virtual DOM React (Facebook Library) */
 /* #DeathToReact ;-} */
 /* This trick allows you to embed, fuse & write HTML inside script tags */
