@@ -2,9 +2,9 @@
 /* Vanilla JS (Framework) "Best Practices" > Virtual DOM React (Facebook Library) */
 /* #DeathToReact ;-} */
 /* This trick allows you to embed, fuse & write HTML inside script tags */
-const myJSX = document.body;
+const JSX = document.body;
 /* Functions take Functions as arguments (Lambda) Higher order functions */
-const render = (monitor=calculated()) => myJSX.innerHTML = `
+const render = (monitor=calculated()) => JSX.innerHTML += `
 <main>
   <header> Calculator </header>
   <!-- This trick allows you to embed, fuse & write JS inside HTML elements since we're already inside script tags --> 
