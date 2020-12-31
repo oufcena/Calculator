@@ -1,3 +1,3 @@
 # Calculator
 
-[a link](https://oufcena.github.io/Calculator/)
+[Preview](https://oufcena.github.io/Calculator/)
